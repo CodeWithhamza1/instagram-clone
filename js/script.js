@@ -36,7 +36,7 @@ class Card {
                     </div>
                 </div>
                 <div class="postImage">
-                    <img src="${this.data.postImgSrc}" loading="lazy" alt="">
+                    <img src="${this.data.postImgSrc}" alt="">
                 </div>
                 <div class="postIcons">
                     <div class="firstIcons">
