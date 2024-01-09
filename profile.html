@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>. Mαԋαɾ Hαɱȥα (@maharhamza301) • Instagram photos and videos</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="shortcut icon" href="img/Instagram_icon.png.webp" type="image/webp">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="instaMain">
+            <img src="img/download.png" alt="Preloader">
+        </div>
+        <div class="metaMain">
+            <img src="img/download (1).png" alt="">
+        </div>
+    </div>
+
+    <div class="mainContainer ">
+
+        <div class="ImageContainer ">
+            <div class="img">
+                <div class="upperFlex">
+
+                    <img src="img/stat8.jpg" alt="myPhoto">
+
+
+                    <div class="upperInfo ">
+                        <span>maharhamza301</span>
+                        <button class="btnFollow">Follow</button>
+                        <div class="break">
+                            <span>84 <b>posts</b></span> <span class="middle">1,001 <b>followers</b></span> <span>110
+                                <b>following</b></span>
+                        </div>
+                        <div class="ProfileInfo ">
+                            <div class="ProfileName ">
+                                <p>. Mαԋαɾ Hαɱȥα</p>
+                            </div>
+
+
+                            <div class="otherInfo ">
+                                <p>★彡[ᴄʀᴇᴀᴛɪᴠᴇ ᴜɪ/ᴜx ᴅᴇꜱɪɢɴᴇʀ]彡★</p>
+                                <p>❤️ らɪЛƓŁƐ ❤️</p>
+                                <p>🎂 ƈǟӄɛ ӄɨʟʟ օռ 11 ʝʊʟʏ 🎂</p>
+                                <p>👑ƘƖƝƓ ƠƑ ӇЄƛƦƬȤ👑</p>
+                                <p>╰•★★ ɧıɬ ɬɧɛ ʄơƖƖơῳ ცɬŋ ★★•╯</p>
+                                <p>🌜₳Ⱡ₴Ø Ø₦ Ʉ₮Ʉ฿Ɇ🌛</p>
+                                <p><a href="http://www.factology.site">www.factology.site</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="top">
+    <div class="imagesSection">
+        <div id="imageContainer" class="images ">
+            <!-- <div>
+                <img src="img/stat8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/stat8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/stat8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/stat8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/stat8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/stat8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/stat8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img src="img/stat8.jpg" alt="">
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <script>
+
+        let btn = document.querySelector('.btnFollow');
+
+        // Function to set initial button text based on localStorage
+        function setInitialButtonText() {
+            let followStatus = localStorage.getItem("follow");
+            if (followStatus === "1") {
+                btn.textContent = "following";
+            } else {
+                btn.textContent = "follow";
+            }
+        }
+
+        // Set initial button text on page load
+        setInitialButtonText();
+
+        // Add click event listener to the button
+        btn.addEventListener('click', () => {
+            // Retrieve the follow status from localStorage
+            let followStatus = localStorage.getItem("follow");
+
+
+            // Toggle follow/unfollow based on the current status
+            if (followStatus === "0") {
+                btn.textContent = "following";
+                localStorage.setItem("follow", "1");
+            } else {
+                btn.textContent = "follow";
+                localStorage.setItem("follow", "0");
+            }
+        });
+
+
+        // Array of image sources
+        var imageSources = ["img/stat8.jpg", "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fHww", "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D", "https://i.redd.it/ow448xml45v51.jpg", "https://img.freepik.com/free-photo/bright-3d-heart-shape_23-2150965442.jpg", "https://whatson.ae/wp-content/uploads/2023/04/pics-of-the-week-feature.gif", "https://static.boredpanda.com/blog/wp-content/uploads/2016/11/before-and-after-photoshop-pics-90-581b2e9ab164d__700.jpg", "https://shortpixel.com/blog/wp-content/uploads/2023/12/mario_uncompressed.gif", "https://learn.g2.com/hs-fs/hubfs/plan%20gif%20marketing%20strategy.gif?width=500&name=plan%20gif%20marketing%20strategy.gif", "https://www.icegif.com/wp-content/uploads/cool-wallpapers-icegif-1.gif", "https://cdn2.hubspot.net/hubfs/53/00-Blog-Related_Images/Excited_GIF.gif", "https://static.demilked.com/wp-content/uploads/2020/09/5f5f2bf241ad9-real-life-old-photos-then-now-coverimage.jpg", "https://i0.wp.com/www.trenddpz.com/wp-content/uploads/2023/03/Kaba-sharifKhanakaba.jpg?resize=707%2C866&ssl=1", "https://sm.mashable.com/t/mashable_me/photo/default/33-16_qtsp.1248.jpg", "https://i.pinimg.com/236x/34/f3/fe/34f3feb82fac889211034368abc03021.jpg"];
+
+        // Get the container element by its id
+        var container = document.getElementById("imageContainer");
+
+        // Loop through the image sources and create div elements with img elements inside
+        for (var i = 0; i < imageSources.length; i++) {
+            // Create a new div element
+            var divElement = document.createElement("div");
+
+            // Add the "imageFit" class to the div
+            divElement.className = "imageFit";
+
+            // Create a new img element
+            var imgElement = document.createElement("img");
+
+            // Set the src and alt attributes for the image
+            imgElement.src = imageSources[i];
+            imgElement.alt = "Image " + (i + 1);
+
+            // Append the img element to the div
+            divElement.appendChild(imgElement);
+
+            // Append the div element to the container
+            container.appendChild(divElement);
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Simulate the content loading delay (you can replace this with your actual content loading logic)
+            setTimeout(function () {
+                // Hide the preloader when the content is fully loaded
+                document.getElementById("preloader").style.display = "none";
+                // Display the main content
+                document.body.style.overflow = "visible";
+            }, 2000); // Set the time in milliseconds (replace with your desired delay)
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.border{
+    border: 2px solid red;
+    margin: 2px;
+    padding: 2px;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.upperFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.break{
+    margin-top: 20px!important;
+}
+
+.middle{
+    margin: 0 15px;
+}
+
+.upperInfo{
+    margin-left: 70px;
+}
+
+.ImageContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ImageContainer img{
+    padding: 3px;
+    background: linear-gradient(90deg, purple, orange, red);
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ProfileInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 35px!important;
+}
+
+.ProfileInfo a{
+    color: #276294;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 2px;
+    text-decoration: none;
+}
+
+.top{
+    margin-top: 10%!important;
+}
+
+
+.imagesSection .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imageFit {
+    width: 350px; /* Set a fixed width for the container */
+    height: 350px; /* Set a fixed height for the container */
+    margin: 5px;
+    overflow: hidden; /* Ensure any overflowing content is hidden */
+  }
+
+  .imageFit img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btnFollow{
+      background-color: #EFEFEF;
+      border: none;
+      outline: none;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-left: 10px;
+  }
+
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+  }
+
+  #preloader img {
+    width: 50%; /* Adjust the size of the preloader spinner */
+    height: 50%;
+    /* animation: spin 1s linear infinite; */
+  }
+
+  .instaMain{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .metaMain{
+      position: absolute;
+      bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  /* Media query for tablet */
+  @media only screen and (max-width: 768px) {
+    .images {
+      grid-template-columns: repeat(2, 1fr); /* Show 2 photos in tablet */
+    }
+  }
+  
+  /* Media query for mobile */
+  @media only screen and (max-width: 480px) {
+    .images {
+      grid-template-columns: repeat(1, 1fr); /* Show 1 photo in mobile */
+    }
+  }
+  
+  @media only screen and (max-width: 614px) {
+      .upperFlex{
+          flex-direction: column;
+          justify-content: center;
+          margin: 10px auto;
+          font-size: 14px;
+      }
+      .upperFlex img{
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin: 10px 0 10px 61px;
+      }
+      .ImageContainer{
+          margin-left: -60px;
+      }
+  }

@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* left side and menus */
+
+.main{
+    display: flex;
+}
+
+.left{
+    width: 25vw;
+    margin-right: 2.5px;
+    position: fixed;
+    z-index: 2;
+}
+
+.right{
+    width: calc(75vw - 2.5px);
+    margin-left: 2.5px;
+    left: 25vw;
+    position: relative;
+    z-index: 1;
+}
+
+.border{
+    border: 2px solid red;
+}
+
+.logo{
+    margin: 30px 20px 20px 20px;
+}
+
+.icons{
+    padding: 20px;
+
+}
+
+.icons ul{
+    align-items: center;
+    width: 100%;
+}
+
+.icons ul li{
+    list-style-type: none;
+    margin: 18px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.bottom{
+    position: relative;
+    bottom: 5px;
+    left: 13px;
+    font-weight: 500;
+}
+
+.icons ul li:hover{
+    background-color: #F2F2F2;
+}
+
+.bottomIcons{
+    padding: 20px;
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+}
+
+.bottomIcons ul{
+    width: 100%;
+}
+
+.bottomIcons ul li, a{
+    list-style: none;
+
+    padding: 10px 0;
+    transition: all 0.1s ease-in;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.bottomIcons ul li:hover{
+    background-color: #F2F2F2;
+}
+
+#main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main-menu li {
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  #menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: -150%; /* Adjust this value as needed */
+    right: 0;
+    padding: 10px;
+    border: 2px solid #F2F2F2;
+  }
+
+  #menu li {
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  #menu li:hover {
+    background-color: #F2F2F2;
+  }
+
+  /* right side start */
+
+  .status{
+      padding: 10px;
+      display: flex;
+      width: 58%;
+      overflow-x: auto;
+  }
+
+  .name{
+      font-size: 13px;
+      text-align: center;
+      font-weight: 100;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #F2F2F2;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #e4e3e3;
+  }
+
+  .status .box img{
+      margin: 0 10px;
+      width: 70px;
+      background: linear-gradient(45deg, purple, orange, red);
+      height: 70px;
+      gap: 20px;
+      border-radius: 50%;
+      padding: 3px;
+      border: none;
+      outline: none;
+  }
+
+  .baqi{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 65%;
+  }
+
+  .profile img{
+      width: 50px!important;
+      height: 50px!important;
+  }
+
+  .img img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  }
+
+  .info{
+      position: absolute;
+      right: 10px;
+      top: 0px;
+  }
+
+  .profile{
+      display: flex;
+      gap: 10px;
+      margin: 20px;
+      font-size: 18px!important;
+      align-items: center;
+  }
+
+  .profile h6{
+    color: #737373!important;
+  }
+
+  .profile p{
+      align-items: center;
+      font-size: 14px;
+  }
+
+  .foryou{
+      font-size: 15px!important;
+      color: #737373;
+      top: 10px;
+      position: relative;
+  }
+
+  .suggestion{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .suggestion h6{
+      font-weight: normal;
+  }
+
+  .suggest{
+      display: flex;
+      margin: 10px;
+      justify-content: space-between;
+      position: relative;
+      cursor: pointer;
+  }
+
+  .profile p{
+    width: 100%; /* Ensure the text takes the full width */
+    text-align: right; /* Align the text to the right */
+    color: #0095F6;
+    margin-left: 13px;
+  }
+
+
+
+  /* profileCards Designing */
+
+  .proinfo{
+      display: flex;
+      align-items: center;
+  }
+
+  .profileName{
+      margin-left: 16px;
+      align-items: center;
+  }
+
+  .bottomCards{
+      margin: 10px 20px;
+  }
+
+  .postImage img{
+    width: 100%;
+    height: auto;
+    max-width: 470px; /* Set the maximum width according to your preference */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 12px 0;
+
+  }
+
+  .dark{
+      color: #737373;
+  }
+
+  .postIcons{
+      display: flex;
+      justify-content: space-between;
+  }
+  .firstIcons img{
+      margin: 0 5px;
+  }
+
+  .filled {
+    fill: red;
+    transform: scale(1.1);
+  }
+
+  .description{
+      margin-top: 4px;
+      font-size: 14px;
+      max-width: 470px;
+      line-height: 1.3;
+  }
+
+  .mainCard{
+      margin-bottom: 40px;
+  }
+
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; /* Set your desired background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Adjust as needed */
+  }
+
+  #preloader img {
+    width: 50%; /* Adjust the size of the preloader spinner */
+    height: 50%;
+    /* animation: spin 1s linear infinite; */
+  }
+
+  .instaMain{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .metaMain{
+      position: absolute;
+      bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+
+/* Video popup designing */
+
+#videoPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  #videoContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  #videoPlayer {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .videoTrigger {
+    cursor: pointer;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .videoTrigger:hover {
+    background-color: #2980b9;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* Center horizontally */
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.image-container img {
+    width: 25px !important;
+    height: 25px !important;
+    object-fit: contain;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+  .headerMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 4;
+    display: none;  
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.mainContainerMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logoMobile img,
+.heartMobile img {
+    max-height: 100%;
+    padding-left: 4px;
+}
+
+.searchMobile form {
+    margin: 0; /* Remove default form margin */
+    flex-grow: 1; /* Allow the search to take available space */
+    align-items: center;
+    display: flex;
+}
+
+.searchMobile input {
+    width: 100%; /* Make the input take the full width */
+    padding: 5px;
+    background: #F2F2F2;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.searchMobile form button{
+    position: relative;
+    /* height: auto; */
+    /* width: auto; */
+    border: none;
+    background: transparent;
+    right: 0;
+}
+
+.searchMobile form button img{
+    width: 15px;
+    position: absolute;
+    left: 155px;
+    top: -8px;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background: #e4e3e3;
+    margin: 0 5px;
+    border-radius: 50%;
+    animation: blink .9s linear infinite;
+    transition: all .1s linear;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.dot:nth-child(4){
+    animation-delay: 0.6s;
+}
+
+@keyframes blink {
+    0%{
+        background: #737373;
+    }
+    100%{
+        background: #e4e3e3;
+    }
+}
+
+  /* Adding some mediaQueries */
+
+  @media only screen and (max-width: 780px) {
+    .bottom{
+        display: none;
+    }
+    .left{
+        width: 10vw;
+    }
+    .right{
+        width: 90vw;
+    }
+    .logo img{
+        width: 90px;
+        margin: -9px;
+    }
+    .icons ul img{
+        width: 27px;
+    }
+  }
+
+  @media only screen and (max-width: 698px) {
+      .left{
+          display: none;
+      }
+
+      .headerMobile{
+          display: flex;
+      }
+
+      .right {
+        width: 100%;
+        margin: 0 auto; /* Center the content */
+        left: 0;
+    }
+
+    .baqi{
+        width: 100%;
+        display: inline;
+    }
+
+    .status{
+        width: 100%!important;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+      }
+      
+      ::-webkit-scrollbar-track {
+        display: none;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        display: none;
+      }  
+      
+      .profileName{
+        margin-left: 14px;
+        align-items: center;
+    }
+
+      .main{
+          justify-content: center!important;
+          align-items: center!important;
+      }
+
+      .mainCard{
+        margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 699px) {
+      .image-container{
+          display: none!important;
+      }
+  }
+
+ @media only screen and (max-width: 1084px){
+     .info{
+         display: none; 
+         position: relative;
+    }
+    .status{
+        width: 80%;
+    }
+    .postImage img{
+        max-width: 570px;
+    }
+    .baqi{
+        width: 80%;
+    }
+    
+ }
+
+ @media only screen and (min-width: 1812px) {
+     .postImage img{
+         max-width: 970px;
+     }
+     *{
+         font-size: 20px!important;
+     }
+ }
+
+ @media only screen and (min-width: 3812px) {
+    .postImage img{
+        max-width: 970px;
+    }
+    *{
+        font-size: 35px!important;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .bottomCards{
+        font-size: 14px;
+    }
+}

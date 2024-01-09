@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Instagram_icon.png.webp" type="image/webp">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="instaMain">
+            <img src="img/download.png" alt="Preloader">
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+        <div class="metaMain">
+            <img src="img/download (1).png" alt="">
+        </div>
+    </div>
+
+
+    <div class="main">
+        <div class="headerMobile">
+            <div class="mainContainerMobile">
+                <div class="logoMobile">
+                    <a href="/"><img src="svg/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="searchMobile">
+                    <form action="#" method="post">
+                        <button><img src="svg/search.svg" alt=""></button>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                    </form>
+                </div>
+                <div class="heartMobile">
+                    <img src="svg/heart.svg" alt="Heart Icon">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="left">
+
+            <a href="/"><div class="logo"><img src="svg/logo.svg" alt="logo"></div></a>
+
+            <div class="icons">
+                <ul>
+                    <li> <img src="svg/home.svg" alt=""> <span class="bottom">Home</span></li>
+                    <li> <img src="svg/search.svg" alt=""> <span class="bottom">Search</span></li>
+                    <li> <img src="svg/explore.svg" alt=""> <span class="bottom">Explore</span></li>
+                    <a href="reels.html">
+                        <li> <img src="svg/reels.svg" alt=""> <span class="bottom">Reels</span></li>
+                    </a>
+                    <li> <img src="svg/message.svg" alt=""> <span class="bottom">Messages</span></li>
+                    <li> <img src="svg/notification.svg" alt=""> <span class="bottom">Notification</span></li>
+                    <li> <img src="svg/create.svg" alt=""> <span class="bottom">Create</span></li>
+                    <a href="profile.html">
+                        <li> <img src="svg/about.svg" alt=""> <span class="bottom">Profile</span></li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="bottomIcons">
+                <ul id="main-menu">
+                    <li> <img src="svg/threads.svg" alt=""> <span class="bottom"><a
+                                href="https://threads.net/">Threads</a></span></li>
+                    <li onclick="toggleMenu()"> <img src="svg/more.svg" alt=""><span class="bottom">More</span></li>
+                </ul>
+                <ul id="menu">
+                    <li> <img src="svg/settings.svg" alt=""> <span class="bottom">Settings</span></li>
+                    <li> <img src="svg/activity.svg" alt=""> <span class="bottom">Your Activity</span></li>
+                    <li> <img src="svg/saved.svg" alt=""> <span class="bottom">Saved</span></li>
+                    <li id="darkModeToggle"> <img src="svg/night.svg" alt=""> <span class="bottom">Switch Theme</span>
+                    </li>
+                    <li> <img src="svg/report.svg" alt=""> <span class="bottom">Report Problem</span></li>
+                    <li onclick="showAboutBox()"> <img src="svg/about.svg" alt=""> <span class="bottom">About</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+
+            <div class="status">
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/BTcmvrCTyNg?autoplay=1"
+                        src="img/stat8.jpg" alt="stat_7">
+                    <p class="name">maharhamza</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/RHeqRuMrZZs?autoplay=1"
+                        src="img/stat1.jpg" alt="stat_1">
+                    <p class="name">ali_rehman</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/JggPXfbg0Is?autoplay=1"
+                        src="img/stat2.jpg" alt="stat_2">
+                    <p class="name">devil_noor</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/RHeqRuMrZZs?autoplay=1"
+                        src="img/stat3.jpg" alt="stat_3">
+                    <p class="name">demo_acc</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/JggPXfbg0Is?autoplay=1"
+                        src="img/stat4.jpg" alt="stat_4">
+                    <p class="name">evil_door</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/BTcmvrCTyNg?autoplay=1"
+                        src="img/stat5.jpg" alt="stat_5">
+                    <p class="name">horror_house</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/JggPXfbg0Is?autoplay=1"
+                        src="img/stat7.jpg" alt="stat_6">
+                    <p class="name">ahmad_khan</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/BTcmvrCTyNg?autoplay=1"
+                        src="https://static.boredpanda.com/blog/wp-content/uploads/2017/04/Virrappan2-58f79980ae6fb__880.jpg"
+                        alt="stat_6">
+                    <p class="name">itx_sahoo</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/JggPXfbg0Is?autoplay=1"
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/35af6a41332353.57a1ce913e889.jpg"
+                        alt="stat_6">
+                    <p class="name">itx_pateel</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/JggPXfbg0Is?autoplay=1"
+                        src="https://st2.depositphotos.com/3758943/6040/i/450/depositphotos_60400957-stock-photo-the-man-in-the-office.jpg"
+                        alt="stat_6">
+                    <p class="name">gifted__</p>
+                </div>
+                <div class="box">
+                    <img class="videoTrigger" data-video-url="https://www.youtube.com/embed/RHeqRuMrZZs?autoplay=1"
+                        src="https://media.newyorker.com/photos/63937f9e6627f9c77e1d1ea9/1:1/w_1649,h_1649,c_limit/Brody-Random-Acts-Of-Flyness-S2.jpg"
+                        alt="stat_6">
+                    <p class="name">noor_adhn</p>
+                </div>
+            </div>
+
+            <div class="baqi">
+                <div class="bottomCards">
+                    <div class="mainCard">
+                        <div id="cardContainer"></div>
+                    </div>
+
+
+                    <div id="videoPopup">
+                        <div id="videoContainer">
+                            <span id="closeButton">&times;</span>
+                            <iframe id="videoPlayer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="info ">
+
+                    <div class="profile img ">
+                        <div><img src="img/stat8.jpg" alt=""></div>
+                        <a href="https://instagram.com/@maharhamza301">
+                            <div>
+                                <h5>maharhamza</h5>
+                                <h6>Mαԋαɾ Hαɱȥα</h6>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="sugg">
+                        <p class="profile foryou">Suggested for you</p>
+                    </div>
+                    <div class="suggestion ">
+                        <div class="profile img suggest ">
+                            <div><img src="img/stat2.jpg" alt=""></div>
+                            <div>
+                                <h5>hussain_wahla_07</h5>
+                                <h6>Followed by...</h6>
+                            </div>
+                            <p>follow</p>
+
+                        </div>
+                        <div class="profile img suggest ">
+                            <div><img src="img/stat4.jpg" alt=""></div>
+                            <div>
+                                <h5>maharnoman.noman</h5>
+                                <h6>Followed by...</h6>
+                            </div>
+                            <p>follow</p>
+
+                        </div>
+                        <div class="profile img suggest ">
+                            <div><img src="img/stat3.jpg" alt=""></div>
+                            <div>
+                                <h5>malaikanoor1071</h5>
+                                <h6>Followed by...</h6>
+                            </div>
+                            <p>follow</p>
+
+                        </div>
+                        <div class="profile img suggest ">
+                            <div><img src="img/stat1.jpg" alt=""></div>
+                            <div>
+                                <h5>hurry_ashu127</h5>
+                                <h6>Followed by...</h6>
+                            </div>
+                            <p>follow</p>
+
+                        </div>
+                        <div class="profile img suggest ">
+                            <div><img src="img/stat5.jpg" alt=""></div>
+                            <div>
+                                <h5>maharaslam56</h5>
+                                <h6>Followed by...</h6>
+                            </div>
+                            <p>follow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="svg/home.svg" alt="Image 1">
+        <img src="svg/explore.svg" alt="Image 2">
+        <img src="svg/reels.svg" id="reelsClick" alt="Image 3">
+        <img src="svg/create.svg" alt="Image 4">
+        <img src="svg/message.svg" alt="Image 5">
+        <img class="profileImg" id="aboutClick" src="svg/about.svg" alt="Image 6">
+    </div>
+
+    <script>
+        let reelsClick = document.getElementById('reelsClick').addEventListener('click', () => {
+            window.location.href = "reels.html"
+        })
+        let aboutClick = document.getElementById('aboutClick').addEventListener('click', () => {
+            window.location.href = "profile.html"
+        })
+    </script>
+
+
+    <script defer src="js/script.js"></script>
+
+</body>
+
+</html>
