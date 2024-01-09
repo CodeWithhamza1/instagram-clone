@@ -1,4 +1,4 @@
-class Card {
+﻿class Card {
     constructor(data) {
         this.data = data;
         this.isLiked = JSON.parse(localStorage.getItem(`card-${this.data.cardId}`)) || false;
@@ -32,7 +32,7 @@ class Card {
                         <img src="${this.data.profileImgSrc}" alt="">
                     </div>
                     <div class="profileName">
-                        <p>${this.data.profileName} <span class="dark">• ${this.formatTime()}</span></p>
+                        <p class="userName">${this.data.profileName} <span class="dark">• ${this.formatTime()}</span></p>
                     </div>
                 </div>
                 <div class="postImage">
@@ -72,7 +72,7 @@ const cardData = [
         time: "2022-01-05T12:34:56", // Sample time in ISO format
         postImgSrc: "img/stat8.jpg",
         cardId: 0,
-        description: "Alhamdullilah!! Kaar e Kamal CA Chapter commemorated its first anniversary by organizing a heartfelt celebration at an...more",
+        description: "Successfully designed & developed the instagram clone in 3 days the maintinance and the more features will coming soon so stay tuned...more",
     },
     // Add more card data as needed
     {

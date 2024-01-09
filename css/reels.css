@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow: hidden; /* Prevent scrollbars */
 }
 
@@ -79,6 +81,11 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
+.ReelIcons img:active{
+    color: red;
+    fill: red;
+}
+
 #floatBtn img {
     width: 27px;
     height: 27px;
@@ -98,4 +105,10 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 550px) {
+    .ReelIcons{
+        bottom: 200px;
+    }
 }
