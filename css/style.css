@@ -479,22 +479,6 @@
     margin: 0 5px;
 }
 
-.searchMobile form button{
-    position: relative;
-    /* height: auto; */
-    /* width: auto; */
-    border: none;
-    background: transparent;
-    right: 0;
-}
-
-.searchMobile form button img{
-    width: 15px;
-    position: absolute;
-    left: 180px;
-    top: -8px;
-}
-
 .dots{
     display: flex;
     justify-content: center;
