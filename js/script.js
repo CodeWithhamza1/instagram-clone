@@ -70,7 +70,7 @@ const cardData = [
         profileImgSrc: "img/stat8.jpg",
         profileName: "maharhamza",
         time: "2022-01-05T12:34:56", // Sample time in ISO format
-        postImgSrc: "../img/stat8.jpg",
+        postImgSrc: "img/stat8.jpg",
         cardId: 0,
         description: "Alhamdullilah!! Kaar e Kamal CA Chapter commemorated its first anniversary by organizing a heartfelt celebration at an...more",
     },
@@ -79,7 +79,7 @@ const cardData = [
         profileImgSrc: "img/stat5.jpg",
         profileName: "maharhamza",
         time: "2022-01-05T12:34:56", // Sample time in ISO format
-        postImgSrc: "../img/stat7.jpg",
+        postImgSrc: "img/stat7.jpg",
         cardId: 1,
         description: "❤️❤️ tag your friends follow @pakistani.tweets @pakistani.tweets @pakistani.tweets for more",
     },
